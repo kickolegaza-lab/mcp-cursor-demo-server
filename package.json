@@ -1,0 +1,34 @@
+{
+  "name": "mcp-cursor-demo-server",
+  "version": "1.0.0",
+  "description": "Runnable MCP server demo: signed, filter-bound pagination cursors. Shows why an offset cursor silently returns the wrong page when an agent changes filters.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "mcp-cursor-demo": "./src/index.js"
+  },
+  "files": [
+    "src/index.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node test/smoke.test.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "zod": "^3.25.76"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "mcp-server",
+    "cursor",
+    "pagination",
+    "ai-agents"
+  ]
+}
